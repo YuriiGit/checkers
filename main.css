@@ -1,0 +1,39 @@
+﻿body{
+    background-image: url(/background.jpg);
+	color: red;
+}
+
+.container {
+	width:100%;
+}
+.container > * {
+	display:table;
+	#position:fixed;
+	margin:100px auto;
+}
+.control{
+	position:fixed;
+	left:540px;
+	top:580px;
+}
+
+.indicator{
+  background: red;
+  border-radius: 3px 0 0 3px;
+  color: #000;
+  font-size: 14px;
+  padding: 0 10px 0 15px;
+  text-align: center;
+  height: 20px;
+  position: absolute;
+  right: 74%;
+  top: 325px;
+}
+.indicator:after{
+  border-left: 10px solid red;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  content: '';
+  position: absolute;
+  right: -10px; top: 0;
+}

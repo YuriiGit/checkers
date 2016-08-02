@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+
+    <head>
+        <meta charset="utf-8" />
+        <title>HTML5 Game</title>
+		<link href="main.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+
+		<div id="info">
+		<center>
+			<h2>Щоб почати гру створіть свою кімнату або зайдіть в існуючу:</h2>
+			<div id="list"> </div><br>
+			<input type='button' value="Зайти" id="enter">
+			<input type='button' value="Створити" id="create">
+		</div></center>
+
+        <div class="container" id="canv">
+            <canvas id="checkers" width="480" height="510"></canvas>
+        </div>
+		<div class="control" id="cont">
+			<input type='button' value=" Підтвердити хід " id="go">
+			<input type='button' value=" Вихід " id="exit">
+		</div>
+		
+		<div>
+			<ul id="chat-output"> </ul>
+			<input type='text' id="chat-input">
+			<input type='button' value="Відправити" id="chat-send">
+		</div>
+		<div class="indicator"><div>Очікуйте противника</div></div>
+		<script type="text/javascript" src="jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="client.js"></script>
+    </body>
+</html>
